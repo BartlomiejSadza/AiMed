@@ -1,75 +1,74 @@
-# React + TypeScript + Vite
+# AiMed landing site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a landing side for AiMed a Scietific Club that focuses on connecting newest technologies and medicine.
 
-Currently, two official plugins are available:
+**Tech stack:** React + Vite + TS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Local setup instructions
 
-## React Compiler
+## 1. System requirements
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+- Node.js: ^20.19.0, ^22.12.0 or >=24.0.0
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 2. Clone the repository
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone git@github.com:BartlomiejSadza/AiMed.git
 ```
 
-# AiMed
+## 3. Install required dependencies
+
+```bash
+cd AiMed/         # locate your cloned repository
+npm install
+```
+
+## 4. Running the project locally
+
+```bash
+npm run dev
+```
+
+After `npm run dev` you may open `http://localhost:5173` to check if everything is running correctly.
+
+## 5. Running the tests
+
+```bash
+npm run test:run  # Vitest
+
+npm run lint      # for checking errors in code
+```
+
+### Building a production version
+
+```bash
+npm run build
+```
+
+### Code formatting
+
+```bash
+npm run format:check # check formatting with Prettier
+```
+
+# Workflow
+
+contributions should follow this basic workflow:
+
+create branch -> commit and push to branch -> create a pull request & wait for a review
+
+# Common issues
+
+If any of the provided commands are not working as intended please run:
+
+```bash
+npm install
+```
+
+this should fix most of the issues _(ex. missing dependencies)_, however if you are still having issues please verify that:
+
+- you are in the correct folder
+  - on UNIX based systems running `pwd` should help
+- you have a supported `Node.js` version installed, v22 (LTS) is recommended
