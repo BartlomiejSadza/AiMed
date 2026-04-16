@@ -14,46 +14,47 @@ npm install
 npm run dev
 ```
 
-> Warto pamietac, ze `npm run dev` uruchamia strone w wersji deweloperskiej, jedynie do celow testowych.
+> Warto pamiętać, że `npm run dev` uruchamia stronę w wersji deweloperskiej, jedynie do celów testowych.
 
 ### Dodatkowe komendy (po instalacji)
 
-- `npm run build` buduje strone pod deployment.
-- `npm run test` uruchamia testy ilosciowe w watch mode, czekajac na zmiany kodu.
-- `npm run test:run` uruchamia testy ilosciowe jednokrotnie.
-- `npm run lint` sprawdza kod pod katem bledow i niespojnosci.
+- `npm run build` buduje stronę pod deployment.
+- `npm run preview` uruchamia lokalny serwer do podglądu zbudowanej strony (jedynie po `npm run build`).
+- `npm run test` uruchamia testy ilościowe w watch mode, czekając na zmiany kodu.
+- `npm run test:run` uruchamia testy ilościowe jednokrotnie.
+- `npm run lint` sprawdza kod pod kątem błędów i niespójności.
 - `npm run format:check` sprawdza, czy kod jest sformatowany zgodnie z ustalonym stylem.
 - `npm run format` formatuje kod zgodnie z ustalonym stylem.
 
-## Zasada pracy zespolowej
+## Zasada pracy zespołowej
 
-1. Utworz branch od aktualnego `main`.
-2. Wprowadz zmiany i przetestuj lokalnie.
+1. Utwórz branch od aktualnego `main`.
+2. Wprowadź zmiany i przetestuj lokalnie.
 3. Pushnij branch na zdalne repo.
-4. Otworz PR do `main`.
+4. Otwórz PR do `main`.
 5. Po review i zielonym CI merguj PR.
 
-## Najczestsze problemy
+## Najczęstsze problemy
 
-- Brak `node_modules` lub blad typu command not found:
+- Brak `node_modules` lub błąd typu command not found:
 
   ```bash
   npm install
   ```
 
-- Niewlasciwa wersja Node:
+- Niewłaściwa wersja Node:
 
   ```bash
   node -v
   ```
 
-  Uzyj `Node 22`, potem ponownie uruchom `npm install`.
+  Użyj `Node 22`, potem ponownie uruchom `npm install`.
 
-- Bledy po zmianie zaleznosci:
+- Błędy po zmianie zależności:
 
   ```bash
   rm -rf node_modules package-lock.json
   npm install
   ```
 
-  Usun folder `node_modules` i plik `package-lock.json`, a nastepnie ponownie zainstaluj zaleznosci.
+  Usuń folder `node_modules` i plik `package-lock.json`, a następnie ponownie zainstaluj zależności.
