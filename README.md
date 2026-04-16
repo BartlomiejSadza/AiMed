@@ -1,6 +1,6 @@
 # AiMed landing site
 
-This project is a landing side for AiMed a Scietific Club that focuses on connecting newest technologies and medicine.
+This project is a landing site for AiMed a Scientific Club that focuses on connecting newest technologies and medicine.
 
 **Tech stack:** React + Vite + TS
 
@@ -9,7 +9,7 @@ This project is a landing side for AiMed a Scietific Club that focuses on connec
 ## 1. System requirements
 
 ```bash
-- Node.js: ^20.19.0, ^22.12.0 or >=24.0.0
+- Node.js: ^20.19.0 or ^22.12.0 (LTS)
 ```
 
 ## 2. Clone the repository
