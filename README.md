@@ -1,75 +1,60 @@
-# React + TypeScript + Vite
+# AI MED
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page koła naukowego AI MED AGH.
 
-Currently, two official plugins are available:
+## Wymagania
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- `Node.js 22` (zgodnie z CI)
+- `npm` (lub inny package manager do Node.js)
 
-## React Compiler
+## Instalacja i uruchomienie
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+> Warto pamiętać, że `npm run dev` uruchamia stronę w wersji deweloperskiej, jedynie do celów testowych.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Dodatkowe komendy (po instalacji)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `npm run build` buduje stronę pod deployment.
+- `npm run preview` uruchamia lokalny serwer do podglądu zbudowanej strony (jedynie po `npm run build`).
+- `npm run test` uruchamia testy ilościowe w watch mode, czekając na zmiany kodu.
+- `npm run test:run` uruchamia testy ilościowe jednokrotnie.
+- `npm run lint` sprawdza kod pod kątem błędów i niespójności.
+- `npm run format:check` sprawdza, czy kod jest sformatowany zgodnie z ustalonym stylem.
+- `npm run format` formatuje kod zgodnie z ustalonym stylem.
 
-# AiMed
+## Zasada pracy zespołowej
+
+1. Utwórz branch od aktualnego `main`.
+2. Wprowadź zmiany i przetestuj lokalnie.
+3. Pushnij branch na zdalne repo.
+4. Otwórz PR do `main`.
+5. Po review i zielonym CI merguj PR.
+
+## Najczęstsze problemy
+
+- Brak `node_modules` lub błąd typu command not found:
+
+  ```bash
+  npm install
+  ```
+
+- Niewłaściwa wersja Node:
+
+  ```bash
+  node -v
+  ```
+
+  Użyj `Node 22`, potem ponownie uruchom `npm install`.
+
+- Błędy po zmianie zależności:
+
+  ```bash
+  rm -rf node_modules package-lock.json
+  npm install
+  ```
+
+  Usuń folder `node_modules` i plik `package-lock.json`, a następnie ponownie zainstaluj zależności.
