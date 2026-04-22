@@ -33,7 +33,7 @@ function IconBox() {
       >
         <Icon type="instagram" size={34} />
       </a>
-      <a href="mailto:aimed@agh.edu.pl" aria-label="Gmail" className="icon-circle bg-blur">
+      <a href="mailto:aimed@agh.edu.pl" aria-label="Mail" className="icon-circle bg-blur">
         <Icon type="gmail" size={34} />
       </a>
     </div>
@@ -44,7 +44,7 @@ function BgVideo() {
   return (
     <>
       <div className="bg-video">
-        <video className="bg-video" autoPlay loop muted>
+        <video className="bg-video" autoPlay loop muted playsInline>
           <source src={video} type="video/mp4" />
         </video>
       </div>

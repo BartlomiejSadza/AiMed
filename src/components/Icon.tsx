@@ -11,13 +11,7 @@ const Icons = {
 }
 
 function Icon({ type, size }: { type: keyof typeof Icons; size?: number }) {
-  return (
-    <img
-      src={Icons[type]}
-      alt={`${type} icon`}
-      style={{ width: `${size || 36}px`, height: `${size || 36}px` }}
-    />
-  )
+  return <img src={Icons[type]} style={{ width: `${size || 36}px`, height: `${size || 36}px` }} />
 }
 
 export default Icon
