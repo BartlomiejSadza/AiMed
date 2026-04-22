@@ -16,16 +16,24 @@ function SloganBox() {
 function IconBox() {
   return (
     <div className="icon-box">
-      <a href="#" aria-label="Facebook" className="icon-circle bg-blur">
+      <a
+        href="https://www.facebook.com/people/Ko%C5%82o-Naukowe-AI-Med/61570629163949/"
+        aria-label="Facebook"
+        className="icon-circle bg-blur"
+      >
         <Icon type="facebook" size={34} />
       </a>
-      <a href="#" aria-label="GitHub" className="icon-circle bg-blur">
+      <a href="https://github.com/AI-MED-AGH" aria-label="GitHub" className="icon-circle bg-blur">
         <Icon type="github" size={34} />
       </a>
-      <a href="#" aria-label="Instagram" className="icon-circle bg-blur">
+      <a
+        href="https://www.instagram.com/aimed_agh/"
+        aria-label="Instagram"
+        className="icon-circle bg-blur"
+      >
         <Icon type="instagram" size={34} />
       </a>
-      <a href="#" aria-label="Gmail" className="icon-circle bg-blur">
+      <a href="mailto:aimed@agh.edu.pl" aria-label="Gmail" className="icon-circle bg-blur">
         <Icon type="gmail" size={34} />
       </a>
     </div>
