@@ -30,3 +30,124 @@
   padding: var(--space-md);
   background: var(--color-surface);
 }
+
+.box-border {
+  border-color: #efeceb;
+  border-width: 4px;
+  border-style: solid;
+  padding: 4px;
+}
+
+.hero-section {
+  background: #000000;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3em;
+  display: relative;
+  overflow: hidden;
+}
+
+.bg-blur {
+  background-color: rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(14.25px);
+}
+
+.slogan-box {
+  max-width: 43em;
+  min-height: 16em;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.slogan-box h1 {
+  font-size: 2.66em;
+  line-height: normal;
+  text-align: center;
+  font-family: 'VT323';
+  font-weight: 400;
+}
+
+.slogan-box h2 {
+  font-size: 1.25em;
+  text-align: center;
+  font-family: 'IBM Plex Mono';
+  font-weight: 500;
+}
+
+.icon-box {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+.icon-circle {
+  border-radius: 50%;
+  border-color: var(--color-border);
+  border-width: 1px;
+  border-style: solid;
+  width: 3.5em;
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  z-index: 0;
+}
+
+.bg-video-poster {
+  object-fit: cover;
+}
+
+.bg-video-media {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.bg-video-media.is-visible {
+  opacity: 1;
+}
+
+.bg-video-placeholder {
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* color overlay for video */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(156, 141, 182, 0.7);
+  pointer-events: none;
+  mix-blend-mode: color-burn;
+  z-index: 1;
+}
+
+/* prevent overlay from showing through */
+.hero-section > :not(.bg-video) {
+  position: relative;
+  z-index: 2;
+}
