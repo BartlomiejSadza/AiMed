@@ -5,7 +5,7 @@ function AboutText() {
   return (
     <div className="about-text-container">
       <div className="about-header">
-        <img src={infoIcon} alt="Info icon" />
+        <img src={infoIcon} alt="info icon" />
         <h1> Kim jesteśmy? </h1>
       </div>
       <h2>
@@ -26,7 +26,7 @@ function AboutBox() {
   return (
     <div className="about-box">
       <AboutText />
-      <img src={teamPicture} className="about-picture"></img>
+      <img src={teamPicture} alt="Nasz zespół" className="about-picture"></img>
     </div>
   )
 }
