@@ -26,7 +26,7 @@ function AboutBox() {
   return (
     <div className="about-box">
       <AboutText />
-      <img src={teamPicture}></img>
+      <img src={teamPicture} className="about-picture"></img>
     </div>
   )
 }
