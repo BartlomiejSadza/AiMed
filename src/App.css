@@ -73,6 +73,31 @@
   font-family: 'VT323';
   font-weight: 400;
 }
+.about-box {
+  display: flex;
+  padding: 1em;
+  gap: 2em;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-header {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.about-box h1 {
+  font-size: 24pt;
+  text-align: left;
+  font-family: 'VT323';
+  font-weight: 400;
+}
 
 .slogan-box h2 {
   font-size: 1.25em;
@@ -129,4 +154,19 @@
 .hero-section > :not(.bg-video-layer) {
   position: relative;
   z-index: 2;
+}
+
+.about-box h2 {
+  font-size: 12pt;
+  font-family: 'IBM Plex Mono';
+  font-weight: 100;
+}
+
+.about-box img {
+  width: 50%;
+  object-fit: contain;
+}
+
+.about-header img {
+  width: 40px;
 }
