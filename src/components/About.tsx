@@ -6,18 +6,18 @@ function AboutText() {
     <div className="about-text-container">
       <div className="about-header">
         <img src={infoIcon} alt="info icon" />
-        <h1> Kim jesteśmy? </h1>
+        <h2> Kim jesteśmy? </h2>
       </div>
-      <h2>
+      <p>
         Jesteśmy AI Med, czyli Artificial Intelligence in Medicine. Jako koło naukowe Akademii
         Górniczo-Hutniczej w Krakowie, łączymy medycynę z nowoczesnymi technologiami sztucznej
         inteligencji.
-        <br />
-        <br />
+      </p>
+      <p>
         Naszą misją jest rozwój innowacyjnych rozwiązań wspierających diagnostykę, terapię oraz
         analizę danych medycznych. Ale przede wszystkim staramy się łączyć pasje z nauką i w
         przyjaznej atmosferze tworzyć własne rozwiązania różnych problemów.
-      </h2>
+      </p>
     </div>
   )
 }

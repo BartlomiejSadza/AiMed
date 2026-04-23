@@ -75,8 +75,8 @@
 }
 .about-box {
   display: flex;
-  padding: 1em;
-  gap: 2em;
+  padding: var(--space-md);
+  gap: var(--space-lg);
 }
 
 .about-picture {
@@ -119,8 +119,8 @@
   width: 40px;
 }
 
-.about-box h1 {
-  font-size: 24pt;
+.about-box h2 {
+  font-size: 2rem;
   text-align: left;
   font-family: 'VT323';
   font-weight: 400;
@@ -183,8 +183,8 @@
   z-index: 2;
 }
 
-.about-box h2 {
-  font-size: 12pt;
+.about-box p {
+  font-size: 1rem;
   font-family: 'IBM Plex Mono';
-  font-weight: 100;
+  font-weight: 400;
 }
