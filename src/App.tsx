@@ -4,12 +4,6 @@ import Hero from './components/Hero.tsx'
 function App() {
   return (
     <main className="app-shell">
-      <header className="app-header">
-        <p className="app-kicker">AI Med</p>
-        <p>Landing page - workspace</p>
-        <p className="app-description">Czysta baza pod development.</p>
-      </header>
-
       <section className="hero-section" aria-label="Sekcja hero">
         <Hero />
       </section>
