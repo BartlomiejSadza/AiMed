@@ -43,8 +43,8 @@ function IconBox() {
 function BgVideo() {
   return (
     <>
-      <div className="bg-video">
-        <video className="bg-video" autoPlay loop muted playsInline>
+      <div className="bg-video-layer">
+        <video className="bg-video-media" autoPlay loop muted playsInline>
           <source src={video} type="video/mp4" />
         </video>
       </div>
