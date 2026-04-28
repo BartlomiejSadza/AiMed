@@ -1,5 +1,6 @@
 import Icon from './Icon'
 import video from '../assets/bg-video.webm'
+import fallbackVideo from '../assets/bg-video-fallback.mp4'
 import poster from '../assets/poster.webp'
 
 function SloganBox() {
@@ -47,6 +48,7 @@ function BgVideo() {
       <div className="bg-video-layer">
         <video className="bg-video-media" poster={poster} autoPlay loop muted playsInline>
           <source src={video} type="video/webm" />
+          <source src={fallbackVideo} type="video/mp4" />
         </video>
       </div>
     </>
