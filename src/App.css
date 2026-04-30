@@ -98,7 +98,7 @@
 .about-text-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .about-header {
@@ -113,7 +113,7 @@
 }
 
 .about-box h2 {
-  font-size: 2rem;
+  font-size: clamp(2rem, 2.4vw, 8rem);
   text-align: left;
   font-family: 'VT323';
   font-weight: 400;
@@ -177,7 +177,7 @@
 }
 
 .about-box p {
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.2vw, 4rem);
   font-family: 'IBM Plex Mono';
   font-weight: 400;
 }
