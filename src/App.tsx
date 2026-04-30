@@ -9,7 +9,7 @@ function App() {
         <Hero />
       </section>
 
-      <section className="section-placeholder" aria-label="Sekcja o nas">
+      <section className="about-section" aria-label="Sekcja o nas">
         <AboutBox />
       </section>
 

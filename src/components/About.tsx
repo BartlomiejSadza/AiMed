@@ -24,10 +24,10 @@ function AboutText() {
 
 function AboutBox() {
   return (
-    <div className="about-box">
+    <>
       <AboutText />
       <img src={teamPicture} alt="Nasz zespół" className="about-picture"></img>
-    </div>
+    </>
   )
 }
 
