@@ -32,7 +32,30 @@ function CurrentProjects() {
     <>
       <div className="current-projects-header">
         <h2>Aktualne projekty</h2>
+        <div className="glow-header"></div>
       </div>
+      {/* glow effects */}
+      <div
+        className="glow-ball-big visually-hidden-mobile"
+        style={{ transform: 'translate(36vw, 1vw)' }}
+      ></div>
+      <div
+        className="glow-ball-big visually-hidden-mobile"
+        style={{ transform: 'translate(-55vw, 30vw)' }}
+      ></div>
+      <div
+        className="glow-ball-big visually-hidden-mobile"
+        style={{ transform: 'translate(36vw, 44vw)' }}
+      ></div>{' '}
+      <div
+        className="glow-ball-big visually-hidden-mobile"
+        style={{ transform: 'translate(6vw, 9vw)' }}
+      ></div>
+      <div
+        className="glow-ball-small visually-hidden-mobile"
+        style={{ transform: 'translate(-10vw, 59vw)' }}
+      ></div>
+      {/* projects */}
       <div className="current-projects">
         {projects.map((project) => (
           <Project

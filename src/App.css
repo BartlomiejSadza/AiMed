@@ -16,6 +16,20 @@
   white-space: nowrap;
 }
 
+@media (max-width: 1080px) {
+  .visually-hidden-mobile {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+}
+
 .section-placeholder {
   min-height: 140px;
   padding: var(--space-md);
@@ -234,6 +248,7 @@
   height: auto;
   margin: 1em;
   gap: 1em;
+  z-index: 1;
 }
 
 .current-projects img {
@@ -259,6 +274,42 @@
   font-family: 'IBM Plex Mono';
   font-weight: 400;
   color: gray;
+}
+
+.glow-ball-small {
+  position: absolute;
+  align-self: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 0) 0%);
+  filter: blur(2em);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.glow-ball-big {
+  position: absolute;
+  align-self: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0) 0%);
+  filter: blur(4em);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.glow-header {
+  position: absolute;
+  align-self: center;
+  width: 200%;
+  height: 2em;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0) 0%);
+  filter: blur(2em);
+  z-index: 0;
+  pointer-events: none;
 }
 
 @media (max-width: 1080px) {
