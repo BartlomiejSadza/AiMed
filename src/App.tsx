@@ -1,5 +1,6 @@
 import './App.css'
 import Hero from './components/Hero.tsx'
+import AboutBox from './components/About'
 
 function App() {
   return (
@@ -8,8 +9,8 @@ function App() {
         <Hero />
       </section>
 
-      <section className="section-placeholder" aria-label="Sekcja o nas">
-        <h2>O nas</h2>
+      <section className="about-section" aria-label="Sekcja o nas">
+        <AboutBox />
       </section>
 
       <section className="section-placeholder" aria-label="Sekcja projekty">
