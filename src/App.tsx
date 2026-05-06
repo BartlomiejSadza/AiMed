@@ -1,6 +1,7 @@
 import './App.css'
 import Hero from './components/Hero.tsx'
 import AboutBox from './components/About'
+import JoinUs from './components/JoinUs.tsx'
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
 
       <section className="section-placeholder" aria-label="Sekcja projekty">
         <h2>Projekty</h2>
+      </section>
+
+      <section className="join-us-section" aria-label="Sekcja rekrutacja">
+        <JoinUs />
       </section>
 
       <section className="section-placeholder" aria-label="Sekcja kontakt">
