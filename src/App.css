@@ -256,7 +256,7 @@
   padding-left: 1em;
   padding-right: 1em;
   justify-content: center;
-  width: 12em;
+  min-width: 12em;
 }
 
 .join-us-table-row:not(:last-child) {
