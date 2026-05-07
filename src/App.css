@@ -233,8 +233,9 @@
 }
 
 .join-us-table-row {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 1.5rem;
@@ -247,14 +248,15 @@
   font-size: 1.6rem;
 }
 
-.join-us-table-row > .primary-button > span {
+.join-us-table-row > .primary-button {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
   font-size: 1.25em;
-  width: 100%;
   padding-left: 1em;
   padding-right: 1em;
+  justify-content: center;
+  width: 12em;
 }
 
 .join-us-table-row:not(:last-child) {

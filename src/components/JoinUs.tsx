@@ -33,9 +33,7 @@ function JoinUsTableRow({ position, href, key }: { position: string; href: strin
     <div className="join-us-table-row" key={key}>
       <h3>{position}</h3>
       <LinkButton link={href}>
-        <span className="join-us-table-row-button">
-          Wysyłam CV <Icon type="arrowRight" size={24} />
-        </span>
+        Wysyłam CV <Icon type="arrowRight" size={24} />
       </LinkButton>
     </div>
   )
