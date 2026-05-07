@@ -28,9 +28,9 @@ const recruitmentData = [
   },
 ]
 
-function JoinUsTableRow({ position, href, key }: { position: string; href: string; key: number }) {
+function JoinUsTableRow({ position, href }: { position: string; href: string }) {
   return (
-    <div className="join-us-table-row" key={key}>
+    <div className="join-us-table-row">
       <h3>{position}</h3>
       <LinkButton link={href}>
         Wysyłam CV <Icon type="arrowRight" size={24} />
@@ -42,9 +42,9 @@ function JoinUsTableRow({ position, href, key }: { position: string; href: strin
 function JoinUsTable() {
   return (
     <div className="join-us-table">
-      {recruitmentData.map((item, index) =>
-        JoinUsTableRow({ position: item.position, href: item.href, key: index }),
-      )}
+      {recruitmentData.map((item, index) => (
+        <JoinUsTableRow key={index} position={item.position} href={item.href} />
+      ))}
     </div>
   )
 }
