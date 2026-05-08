@@ -2,6 +2,7 @@ import './App.css'
 import Hero from './components/Hero.tsx'
 import AboutBox from './components/About'
 import JoinUs from './components/JoinUs.tsx'
+import CurrentProjects from './components/CurrentProjects.tsx'
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
 
       <section className="about-section" aria-label="Sekcja o nas">
         <AboutBox />
+      </section>
+
+      <section className="current-projects-section" aria-label="Sekcja aktualne projekty">
+        <CurrentProjects />
       </section>
 
       <section className="section-placeholder" aria-label="Sekcja projekty">
