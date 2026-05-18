@@ -3,6 +3,7 @@ import Hero from './components/Hero.tsx'
 import AboutBox from './components/About'
 import JoinUs from './components/JoinUs.tsx'
 import CurrentProjects from './components/CurrentProjects.tsx'
+import Contact from './components/Contact.tsx'
 
 function App() {
   return (
@@ -27,8 +28,8 @@ function App() {
         <JoinUs />
       </section>
 
-      <section className="section-placeholder" aria-label="Sekcja kontakt">
-        <h2>Kontakt</h2>
+      <section className="contact-section" aria-label="Sekcja kontakt">
+        <Contact />
       </section>
     </main>
   )
