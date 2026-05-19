@@ -1,6 +1,7 @@
 import Icon from './Icon'
 import LinkButton from './LinkButton'
 import myChinaPalIconUrl from '../assets/my-china-pal.svg'
+import { Links } from '../utils/links'
 
 function ContactHeader() {
   return (
@@ -9,12 +10,10 @@ function ContactHeader() {
       <p>Zostań naszym partnerem, współpracuj z nami i buduj przyszłość medycyny.</p>
 
       <div className="contact-header-buttons">
-        <LinkButton link="mailto:aimed@agh.edu.pl">Email</LinkButton>
-        <LinkButton link="https://www.facebook.com/people/Ko%C5%82o-Naukowe-AI-Med/61570629163949/">
-          Facebook
-        </LinkButton>
-        <LinkButton link="https://github.com/AI-MED-AGH">GitHub</LinkButton>
-        <LinkButton link="https://skn.agh.edu.pl/pl/kolo/kn-ai-med/">SKN AGH</LinkButton>
+        <LinkButton link={Links.mail}>Email</LinkButton>
+        <LinkButton link={Links.facebook}>Facebook</LinkButton>
+        <LinkButton link={Links.github}>GitHub</LinkButton>
+        <LinkButton link={Links.instagram}>Instagram</LinkButton>
       </div>
     </div>
   )
@@ -26,16 +25,16 @@ function ContactFooter() {
       <div className="contact-footer">
         <img src={myChinaPalIconUrl} alt="My China Pal" className="my-china-pal-icon" />
         <div className="contact-footer-buttons">
-          <LinkButton link="https://www.facebook.com/people/Ko%C5%82o-Naukowe-AI-Med/61570629163949/">
+          <LinkButton link={Links.facebook}>
             <Icon type="facebook" />
           </LinkButton>
-          <LinkButton link="https://github.com/AI-MED-AGH">
+          <LinkButton link={Links.github}>
             <Icon type="github" />
           </LinkButton>
-          <LinkButton link="https://www.instagram.com/ai.med.agh/">
+          <LinkButton link={Links.instagram}>
             <Icon type="instagram" />
           </LinkButton>
-          <LinkButton link="mailto:aimed@agh.edu.pl">
+          <LinkButton link={Links.mail}>
             <Icon type="gmail" />
           </LinkButton>
         </div>
