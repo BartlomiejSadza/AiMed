@@ -6,7 +6,7 @@ function ContactHeader() {
   return (
     <div className="contact-header">
       <h2>Napisz do nas!</h2>
-      <p>Zostań naszym partnerem, współpracuj z nami i buduj przyszłość medycyny. </p>
+      <p>Zostań naszym partnerem, współpracuj z nami i buduj przyszłość medycyny.</p>
 
       <div className="contact-header-buttons">
         <LinkButton link="mailto:aimed@agh.edu.pl">Email</LinkButton>
