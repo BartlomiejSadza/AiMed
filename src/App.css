@@ -409,3 +409,86 @@
     font-weight: 400;
   }
 }
+
+.contact-section {
+  min-height: 95vh;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(
+    63.68% 40.76% at 50% 112.5%,
+    rgba(255, 255, 255, 0.16) 0%,
+    rgba(2, 9, 13, 0) 100%
+  );
+}
+.contact-header {
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  padding-top: 10em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: var(--space-2xl);
+  padding-right: var(--space-2xl);
+}
+
+.contact-header h2 {
+  font-weight: 400;
+  font-size: 3.5em;
+}
+
+.contact-header p {
+  font-size: 1.3em;
+}
+
+.contact-header-buttons {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.contact-header-buttons > .primary-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1.25em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  justify-content: center;
+  min-width: 10em;
+  font-weight: 400;
+}
+
+.contact-footer-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: var(--space-2xl);
+  padding-right: var(--space-2xl);
+}
+
+.contact-footer {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.contact-footer-buttons {
+  display: flex;
+  gap: 2em;
+}
+
+.contact-footer-buttons > .primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  padding: 0.5em;
+  width: 3.5em;
+  height: 3.5em;
+}
+
+.my-china-pal-icon {
+  height: 3.66em;
+}

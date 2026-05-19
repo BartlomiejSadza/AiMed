@@ -2,6 +2,7 @@ import Icon from './Icon'
 import video from '../assets/bg-video.webm'
 import fallbackVideo from '../assets/bg-video-fallback.mp4'
 import poster from '../assets/poster.webp'
+import { Links } from '../utils/links'
 
 function SloganBox() {
   return (
@@ -18,24 +19,16 @@ function SloganBox() {
 function IconBox() {
   return (
     <div className="icon-box">
-      <a
-        href="https://www.facebook.com/people/Ko%C5%82o-Naukowe-AI-Med/61570629163949/"
-        aria-label="Facebook"
-        className="icon-circle bg-blur"
-      >
+      <a href={Links.facebook} aria-label="Facebook" className="icon-circle bg-blur">
         <Icon type="facebook" size={34} />
       </a>
-      <a href="https://github.com/AI-MED-AGH" aria-label="GitHub" className="icon-circle bg-blur">
+      <a href={Links.github} aria-label="GitHub" className="icon-circle bg-blur">
         <Icon type="github" size={34} />
       </a>
-      <a
-        href="https://www.instagram.com/aimed_agh/"
-        aria-label="Instagram"
-        className="icon-circle bg-blur"
-      >
+      <a href={Links.instagram} aria-label="Instagram" className="icon-circle bg-blur">
         <Icon type="instagram" size={34} />
       </a>
-      <a href="mailto:aimed@agh.edu.pl" aria-label="Mail" className="icon-circle bg-blur">
+      <a href={Links.mail} aria-label="Mail" className="icon-circle bg-blur">
         <Icon type="gmail" size={34} />
       </a>
     </div>
